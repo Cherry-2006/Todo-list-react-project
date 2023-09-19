@@ -1,0 +1,89 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  color: hsl(200, 100%, 90%);
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* Global */
+.btn {
+  background-color: hsla(200, 100%, 30%, 0.433);
+  border: 1px solid hsl(200, 100%, 40%);
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+}
+
+/* For form design */
+.new-item-form {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#item {
+  margin-top: 15px;
+  background-color: hsl(200, 100%, 30%);
+  outline: none;
+  padding: 5px;
+  width: 400px;
+  border: 1px solid hsl(200, 100%, 40%);
+  border-radius: 7px;
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+.new-item {
+  font-size: 20px;
+}
+#add {
+  margin-top: 20px;
+  width: 400px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+/* For Todo list Design */
+ul {
+  padding-left: 20px;
+}
+.items {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#label-item {
+  display: inline-block;
+  width: 150px;
+}
+#Checkbox {
+  margin-right: 10px;
+  width: 24px;
+  height: 19px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.btn-danger {
+  width: 100px;
+  background-color: hsl(0, 100%, 40%, 0.2);
+  border: 1px solid hsl(0, 100%, 40%);
+  color: hsl(0, 100%, 40%);
+}
+/* Responsive Design */
+
+@media only screen and (max-width: 500px) {
+    /* Form Design */
+    #item{
+        width: 200px;
+    }
+    #add{
+        width: 200px;
+    }
+}
